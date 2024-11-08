@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Foods & Restaurants</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="assets/css/style2.css" rel="stylesheet"> <!-- Link to the custom CSS -->
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-top">
+        Food Delivery
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="second.html">Restaurant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="checkout.html">Ckeckout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="foodtracker.html">Track</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary nav-btn" href="#order">Order Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br><br>
+  
+
+
+  <!-- Search Bar -->
+  <section class="search-bar py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="mb-4">Browse All Restaurants & Foods</h2>
+          <input type="text" class="form-control search-input" placeholder="Search for restaurants or foods..." />
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- List/Grid View of Restaurants/Foods -->
+<section class="foods-section py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Food Item 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card food-card shadow-sm">
+          <img src="assets/images/featured/chinese.jpg" class="card-img-top fixed-img-size" alt="Food 1">
+          <div class="card-body">
+            <h5 class="card-title">Margherita Pizza</h5>
+            <p class="card-text">Classic Margherita with tomato sauce, mozzarella, and fresh basil.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="price">₹8.99</span>
+              <span class="rating">⭐⭐⭐⭐⭐</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food Item 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card food-card shadow-sm">
+          <img src="assets/images/featured/restaurant2.jpg" class="card-img-top fixed-img-size" alt="Food 2">
+          <div class="card-body">
+            <h5 class="card-title">Sushi Rolls</h5>
+            <p class="card-text">Fresh sushi rolls with avocado, tuna, and salmon.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="price">₹12.99</span>
+              <span class="rating">⭐⭐⭐⭐</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food Item 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card food-card shadow-sm">
+          <img src="assets/images/featured/restaurant1.jpg" class="card-img-top fixed-img-size" alt="Food 3">
+          <div class="card-body">
+            <h5 class="card-title">Cheeseburger</h5>
+            <p class="card-text">Juicy beef patty with melted cheddar, lettuce, and tomato.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="price">₹6.99</span>
+              <span class="rating">⭐⭐⭐⭐⭐</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Footer Logo and Description -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h4 class="footer-logo">Food Delivery Service</h4>
+        <p>Your favorite meals delivered to your doorstep. Fast, easy, and delicious!</p>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5 class="footer-heading">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white">Home</a></li>
+          <li><a href="#" class="text-white">Menu</a></li>
+          <li><a href="#" class="text-white">Order Now</a></li>
+          <li><a href="#" class="text-white">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5 class="footer-heading">Follow Us</h5>
+        <div class="social-icons">
+          <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white mr-3"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <p class="m-0">&copy; 2024 Food Delivery Service. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/cart.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-top">
+        Food Delivery
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="second.html">Restaurant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="checkout.html">Ckeckout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="foodtracker.html">Track</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary nav-btn" href="#order">Order Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br><br>
+
+
+<div class="container my-5">
+    <h2 class="text-center mb-5 text-primary">Your Shopping Cart</h2>
+    <div class="cart-container p-4">
+        
+        <!-- Cart Item 1 -->
+        <div class="row cart-item mb-4 p-3 rounded shadow-sm">
+            <div class="col-md-2">
+                <img src="assets/images/featured/chinese.jpg" alt="Margherita Pizza" class="img-fluid rounded fixed-img">
+            </div>
+            <div class="col-md-5">
+                <h5 class="item-name">Margherita Pizza</h5>
+                <p class="text-muted">Classic Margherita with tomato sauce, mozzarella, and fresh basil.</p>
+                <p class="restaurant-name"><small>Pizza Haven</small></p>
+            </div>
+            <div class="col-md-2 text-center">
+                <span class="item-price">₹8.99</span>
+            </div>
+            <div class="col-md-2 text-center quantity-container">
+                <button class="btn btn-outline-secondary btn-sm quantity-btn">-</button>
+                <span class="quantity mx-2">1</span>
+                <button class="btn btn-outline-secondary btn-sm quantity-btn">+</button>
+            </div>
+            <div class="col-md-1 text-end">
+                <button class="btn btn-sm btn-danger remove-btn">Remove</button>
+            </div>
+        </div>
+
+        <!-- Cart Item 2 -->
+        <div class="row cart-item mb-4 p-3 rounded shadow-sm">
+            <div class="col-md-2">
+                <img src="assets/images/featured/chinese.jpg" alt="Spaghetti Carbonara" class="img-fluid rounded fixed-img">
+            </div>
+            <div class="col-md-5">
+                <h5 class="item-name">Spaghetti Carbonara</h5>
+                <p class="text-muted">Spaghetti with creamy sauce, pancetta, and Parmesan cheese.</p>
+                <p class="restaurant-name"><small>Italiano Bistro</small></p>
+            </div>
+            <div class="col-md-2 text-center">
+                <span class="item-price">₹12.50</span>
+            </div>
+            <div class="col-md-2 text-center quantity-container">
+                <button class="btn btn-outline-secondary btn-sm quantity-btn">-</button>
+                <span class="quantity mx-2">1</span>
+                <button class="btn btn-outline-secondary btn-sm quantity-btn">+</button>
+            </div>
+            <div class="col-md-1 text-end">
+                <button class="btn btn-sm btn-danger remove-btn">Remove</button>
+            </div>
+        </div>
+
+        <!-- Cart Item 3 -->
+        <div class="row cart-item mb-4 p-3 rounded shadow-sm">
+            <div class="col-md-2">
+                <img src="assets/images/categories/desserts.jpg" alt="Beef Burger" class="img-fluid rounded fixed-img">
+            </div>
+            <div class="col-md-5">
+                <h5 class="item-name">Beef Burger</h5>
+                <p class="text-muted">Juicy beef patty with lettuce, tomato, cheese, and special sauce.</p>
+                <p class="restaurant-name"><small>Burger Joint</small></p>
+            </div>
+            <div class="col-md-2 text-center">
+                <span class="item-price">₹10.00</span>
+            </div>
+            <div class="col-md-2 text-center quantity-container">
+                <button class="btn btn-outline-secondary btn-sm quantity-btn">-</button>
+                <span class="quantity mx-2">1</span>
+                <button class="btn btn-outline-secondary btn-sm quantity-btn">+</button>
+            </div>
+            <div class="col-md-1 text-end">
+                <button class="btn btn-sm btn-danger remove-btn">Remove</button>
+            </div>
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="cart-summary text-end mt-5">
+            <p class="mb-2"><strong>Subtotal:</strong> <span class="subtotal">₹31.49</span></p>
+            <p class="mb-2"><strong>Delivery Charge:</strong> <span class="delivery-charge">₹3.00</span></p>
+            <p class="mb-2"><strong>Tax:</strong> <span class="tax">₹2.50</span></p>
+            <hr>
+            <h5><strong>Total:</strong> <span class="total-price">₹36.99</span></h5>
+        </div>
+
+        <!-- Proceed Button -->
+        <div class="text-center mt-4">
+            <button class="btn btn-lg btn-success proceed-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+</div>
+
+
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Logo and Description -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h4 class="footer-logo">Food Delivery Service</h4>
+          <p>Your favorite meals delivered to your doorstep. Fast, easy, and delicious!</p>
+        </div>
+  
+        <!-- Useful Links -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#" class="text-white">Menu</a></li>
+            <li><a href="#" class="text-white">Order Now</a></li>
+            <li><a href="#" class="text-white">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Social Media Links -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="footer-heading">Follow Us</h5>
+          <div class="social-icons">
+            <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="text-center mt-4">
+        <p class="m-0">&copy; 2024 Food Delivery Service. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+<script src="assets/js/cart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/foodtracker.css">
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkrFYkxmtHZHod1Xd2b7OkGFsnto59oyQ&callback=initMap" async defer></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top transparent-navbar" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-top">
+        Food Delivery
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="second.html">Restaurant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="checkout.html">Ckeckout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="foodtracker.html">Track</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary nav-btn" href="#order">Order Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br><br>
+
+<div class="container my-5">
+    <h2 class="text-center mb-5 text-primary">Track Your Order</h2>
+
+    <div class="order-status">
+        <div class="d-flex justify-content-between">
+            <div class="status-step active">
+                <div class="step-circle">1</div>
+                <div>Order Received</div>
+            </div>
+            <div class="status-step active">
+                <div class="step-circle">2</div>
+                <div>Preparing</div>
+            </div>
+            <div class="status-step active">
+                <div class="step-circle">3</div>
+                <div>Out for Delivery</div>
+            </div>
+            <div class="status-step">
+                <div class="step-circle">4</div>
+                <div>Delivered</div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <h4>Estimated Delivery Time</h4>
+            <p id="delivery-time">30 mins</p>
+        </div>
+        
+        <div class="text-center mt-4">
+            <h4>Track on Map</h4>
+            <!-- Placeholder for the map -->
+            <div id="map" style="width: 100%; height: 400px; border-radius: 8px;"></div>
+        </div>
+    </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Logo and Description -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h4 class="footer-logo">Food Delivery Service</h4>
+          <p>Your favorite meals delivered to your doorstep. Fast, easy, and delicious!</p>
+        </div>
+  
+        <!-- Useful Links -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#" class="text-white">Menu</a></li>
+            <li><a href="#" class="text-white">Order Now</a></li>
+            <li><a href="#" class="text-white">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Social Media Links -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="footer-heading">Follow Us</h5>
+          <div class="social-icons">
+            <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mr-3"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="text-center mt-4">
+        <p class="m-0">&copy; 2024 Food Delivery Service. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+<script src="assets/js/foodtracker.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

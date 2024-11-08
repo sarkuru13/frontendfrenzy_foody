@@ -1,0 +1,533 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+/* Search Bar */
+.search-bar {
+  background-color: #f7f7f7;
+  padding: 40px 0;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+}
+
+.search-input:focus {
+  border-color: #ff5733;
+  box-shadow: 0 0 5px rgba(255, 87, 51, 0.5);
+}
+/* Food Card Layout */
+.food-card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.food-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Fixed Image Size */
+.fixed-img-size {
+  height: 200px; /* Fixed height for image */
+  object-fit: cover; /* Ensure images fit properly without stretching */
+}
+
+/* Card Body */
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #ff5733;
+}
+
+.rating {
+  font-size: 1.2rem;
+  color: #f4a261;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  /* On smaller devices, food cards should be stacked in a single column */
+  .foods-section .col-md-4 {
+    margin-bottom: 20px;
+  }
+
+  /* Adjust image height on smaller screens */
+  .fixed-img-size {
+    height: 180px;
+  }
+}
+
+/* Large Screens and Desktop View */
+@media (min-width: 992px) {
+  .foods-section .col-md-4 {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+}
+
+
+/* Navbar Styling */
+.transparent-navbar {
+  background: rgba(0, 0, 0, 0.2); /* Transparent black initially */
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transparent-navbar.scrolled {
+  background: linear-gradient(90deg, #1e3c72, #2a5298); /* Deep blue gradient */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: #f8f9fa;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #f8f9fa !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffcc00 !important; /* Bright yellow for hover */
+}
+
+.nav-btn {
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #ff6600 !important; /* Orange hover */
+  transform: scale(1.1);
+}
+
+/* Smooth Scrolling Effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+}
+
+
+/* Hero Section */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #fff;
+}
+
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: slideInFromLeft 1.5s ease-in-out;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-section .form-control {
+  width: 60%;
+  transition: width 0.3s;
+}
+
+.hero-section .form-control:focus {
+  width: 80%;
+  outline: none;
+}
+
+.hero-section button {
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+/* Featured Section */
+.featured-section {
+  padding: 50px 0;
+}
+
+.featured-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.card {
+  height: 350px; /* Set a fixed height for the card */
+  overflow: hidden; /* Prevent overflow of content */
+}
+
+.card-img-top {
+  object-fit: cover; /* Ensure the image covers the space without distorting */
+  height: 200px; /* Fix image height */
+}
+
+.card-body {
+  flex-grow: 1; /* Ensures the content stretches to fill available space */
+  padding: 15px;
+}
+
+/* Ensure the text inside the card has consistent spacing */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Hover effect for the cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Slightly lifts the card */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05); /* Slightly zooms the image on hover */
+}
+
+
+
+/* Categories Section Style */
+.categories-section {
+  background-color: #f8f9fa; /* Light background */
+}
+
+h2.text-dark {
+  font-family: 'Poppins', sans-serif; /* Elegant font for headings */
+  font-weight: 700;
+  color: #333;
+}
+
+/* Style for category cards */
+.category-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category-img {
+  max-width: 120px;
+  height: 120px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-img {
+  transform: scale(1.1);
+}
+
+.category-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.category-card:hover .category-title {
+  color: #ff5733; /* Accent color */
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 576px) {
+  .category-img {
+    max-width: 100px;
+    height: 100px;
+  }
+
+  .category-title {
+    font-size: 1rem;
+  }
+}
+
+
+/* Promotional Banner Styling */
+.promo-banner {
+  background-color: #ff5733; /* Bright color for attention */
+  color: #fff; /* White text for contrast */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: 'Poppins', sans-serif;
+  animation: slideIn 1s ease-out; /* Smooth animation */
+}
+
+.promo-banner .promo-text {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.promo-banner .promo-code {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #333; /* Dark background for the promo code */
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .promo-banner .promo-text {
+    font-size: 1rem;
+  }
+
+  .promo-banner .promo-code {
+    font-size: 1.2rem;
+  }
+}
+
+/* Keyframe Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #343a40; /* Dark background for the footer */
+  color: #fff;
+}
+
+.footer-logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+ul.list-unstyled li {
+  margin-bottom: 0.5rem;
+}
+
+ul.list-unstyled li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+ul.list-unstyled li a:hover {
+  color: #ff5733; /* Hover color for links */
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff5733; /* Accent color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-logo {
+    font-size: 1.25rem;
+  }
+
+  .footer-heading {
+    font-size: 1rem;
+  }
+
+  .social-icons a {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .social-icons {
+    text-align: center;
+  }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  .hero-section .form-control {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+  .hero-section .form-control {
+    width: 90%;
+  }
+}
+
+/* Keyframes for Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+
+/* Footer Styling */
+.footer {
+  background-color: #343a40; /* Dark background for the footer */
+  color: #fff;
+}
+
+.footer-logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+ul.list-unstyled li {
+  margin-bottom: 0.5rem;
+}
+
+ul.list-unstyled li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+ul.list-unstyled li a:hover {
+  color: #ff5733; /* Hover color for links */
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff5733; /* Accent color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-logo {
+    font-size: 1.25rem;
+  }
+
+  .footer-heading {
+    font-size: 1rem;
+  }
+
+  .social-icons a {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .social-icons {
+    text-align: center;
+  }
+}
+
